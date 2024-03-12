@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html> 
+    
+    <head> 
+        <meta charset="UTF-8">
+        <title> Personal Page </title>
+
+        <link rel="stylesheet" href="appearence.css">        
+        
+        <style>
+            body {
+                font-family: Monocraft, sans-serif;
+                background-color: rgb(93, 173, 226);
+            }
+            li {
+                padding-left: 5px ;
+            }
+        </style>   
+    
+    
+    </head>
+
+    <body> 
+
+        <h1 class="title"> Personal page </h1>
+        
+        <div class="contained">
+            <p style="margin-left: 5px"> Hello everyone this is my first webpage, here is some data about me: </p>
+
+                <ul>
+                    <li> Name: Diego Lazcano</li>
+                    <li> Major: Engineer student at the University of Los Andes</li>
+                    <li> Year of University Enrollment: 4 Year</li>
+                    <li> <a href="https://github.com/Dlazcano8">Github Account</a></li>
+                </ul>
+
+            <p style="text-align: center">I like videogames and movies. Nerd and proud !</p>
+        </div>
+
+        <div class = "container">   
+            <table class = "table">
+                <tr> 
+                    <th>Skill</th>
+                    <th>Level</th>
+                </tr>
+                
+                <tr>
+                    <td>Python</td>
+                    <td>Advance</td>
+                </tr>
+                <tr>
+                    <td>JavaScript</td>
+                    <td>Medium</td>
+                </tr>
+                <tr>
+                    <td>Html/Css</td>
+                    <td>Basic</td>
+                </tr>
+                <tr>
+                    <td>Git</td>
+                    <td>Medium</td>
+                </tr>
+                <tr>
+                    <td>Spanish</td>
+                    <td>Native</td>
+                </tr>
+                <tr>
+                    <td>English</td>
+                    <td>Medium</td>
+                </tr>
+            </table>
+
+        </div>  
+
+        <form id="question">
+  
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+          
+            <button type="submit">Enviar</button>
+          </form>
+          
+          <div id="message" style="margin: 5px;"></div>
+          
+          <script>
+
+            var question = document.getElementById('question');
+          
+            question.addEventListener('submit', function(event) {
+              event.preventDefault();
+          
+              var vname = document.getElementById('name').value;
+          
+              var elementmesage = document.getElementById('message');
+              elementmesage.textContent = 'Hi, ' + vname + '!';
+            });
+          </script>
+
+
+    </body>
+
+
+
+</html> 
