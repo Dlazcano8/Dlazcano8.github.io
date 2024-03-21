@@ -11,7 +11,7 @@
     background-color: white;
     border: 5px solid black;
     padding: 5px;
-    margin: 1px;
+    margin: 10px;
 }
 
 .table{
@@ -28,7 +28,12 @@ th, td {
     padding: 5px;
 }
 
-.container{
-    display: flex;
-    justify-content: center;
-}
+.centered {
+    text-align: center; /* Para centrar contenido dentro de la columna */
+  }
+
+.fixed-size {
+    width: 100%;
+    height: auto; /* Esto mantiene la proporción de la imagen */
+  }
+
