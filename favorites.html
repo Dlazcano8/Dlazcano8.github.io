@@ -27,39 +27,40 @@
 
 <body>
   <div class="container-center">
-    <div class="col-6 mx-auto">
+    <div class="col-sm-6 mx-auto">
       <h1 class="title"> My favorites </h1>
     </div>
   </div>
 
-  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="margin: 15px;">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Traits</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="favorites.html">Favorites</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="color: gray;" href="https://www.youtube.com/shorts/9C5pHEfT2TQ">Disabled</a>
-          </li>
-        </ul>
+  <div class="row" style="margin-left: 1px; margin-right:25px;">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="margin: 15px;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Traits</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="favorites.html">Favorites</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: gray;" href="https://www.youtube.com/shorts/9C5pHEfT2TQ">Disabled</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
-
+    </nav>
+  </div>
   <!--CARDS-->
 
   <div class="row">
 
-    <div class="col-4 d-flex justify-content-center align-items-center">    
+    <div class="col-lg-4 d-flex justify-content-center align-items-center" style="margin-top: 25px; margin-bottom: 25px;">    
         <div class="card" style="width: 20rem; height: 34rem;">
           <img src="photos/Cinema.jpg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -72,7 +73,7 @@
         </div>       
     </div>
     
-    <div class="col-4 d-flex justify-content-center align-items-center">
+    <div class="col-lg-4 d-flex justify-content-center align-items-center" style="margin-top: 25px; margin-bottom: 25px;">
       <div class="card" style="width: 18rem;">
         <img src="photos/Steam-logo.png" class="card-img-top" style="padding: 25px; margin: 5px;" alt="...">
         <div class="card-body">
@@ -85,7 +86,7 @@
       </div>
     </div>
 
-    <div class="col-4 d-flex justify-content-center align-items-center">
+    <div class="col-lg-4 d-flex justify-content-center align-items-center" style="margin-top: 25px; margin-bottom: 25px;">
       <div class="card" style="width: 20rem;height: 34rem;">
         <img src="photos/LEGO_logo..png" class="card-img-top" alt="...">
         <div class="card-body">
@@ -100,7 +101,7 @@
 
     <!--Component 3: Alert-->
     <div class="row justify-content-end align-items-end" style="margin-top: 50px;">
-      <div class="col-3" style="margin: 10px;">
+      <div class="col-sm-3" style="margin: 10px;">
         <div class="alert alert-warning alert-dismissible fade show" role="alert">
           <strong>Carefull!</strong> If you press blue buttoms, you'll leave this page
           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
